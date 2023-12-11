@@ -1,0 +1,79 @@
+body {
+    background-color: rgb(46, 45, 45);
+    color: aliceblue;
+    min-width: 50px;
+    min-height: 50px;
+    text-align: center;
+  }
+  
+  h1 {
+    font-family: Creepster;
+    font-size: 50px;
+    letter-spacing: 2.5px;
+  }
+  
+  .container {
+    display: flex;
+    margin: 20px auto;
+    width: 50%;
+    flex-wrap: wrap;
+    align-items: center;
+    padding: 20px;
+    gap: 10px;
+    justify-content: space-evenly;
+    background-color: black;
+  }
+  
+  .card {
+    flex-grow: 1;
+    height: 155px;
+    gap: 20px;
+    background-color: aliceblue;
+    width: 155px;
+    position: relative;
+    transform-style: preserve-3d;
+    transition: transform 0.5s ease-in-out;
+    cursor: pointer;
+  }
+  .card.flipped{
+    -webkit-transform: rotateY(180deg);
+    -moz-transform: rotateY(180deg);
+    transform: rotateY(180deg);
+  }
+  
+  .back,
+  .front {
+    height: 100%;
+    width: 100%;
+    position: absolute;
+  }
+  .card-img{
+    width: 155px;
+    height: 155px;
+  }
+  .card .front {
+    display: flex;
+    justify-content: center;
+   
+  }
+  .card .back{
+    background-color: rgb(130, 132, 132);
+    backface-visibility: hidden;
+  }
+  .restart-game{
+    background-color: aliceblue;
+    color: rgb(53, 52, 52);
+    width: fit-content;
+    height: fit-content;
+    padding: 10px;
+    border-radius: 10px;
+    font-family: Creepster;
+    cursor: pointer;
+    border: none;
+    font-size: 20px;
+  }
+  .restart-game:hover{
+    
+        box-shadow: 0 12px 16px 0 rgba(209, 204, 204, 0.24),0 17px 50px 0 rgba(209, 209, 209, 0.19);
+     
+  }
